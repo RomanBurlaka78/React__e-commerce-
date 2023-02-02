@@ -1,13 +1,136 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+html {
+  font-size: 62.5%;
+
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+  font-size: 1.6rem;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1490px;
+  margin: 0 auto;
+  height: auto; 
+}
+.container {
+  width: 1280px;
+  margin: 50px auto;
+ 
+}
+/* header */
+.header__menu {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo__wrapper {
+  flex: 0 1 200px;
+  display: flex;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu__item {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+
+}
+
+.menu__link{
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  transition: opacity .3s ease;
+ 
+}
+.menu__link:hover{
+  color: #e22222;
+  opacity: .7;
+  
+}
+.logo {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5;
+  
+}
+
+
+.presentation {
+  margin: 50px 0;
+  background: url('./img/hero.jpeg')  center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #bcbcbc;
+  width: 100%;
+  max-width: 100%;
+  min-height: 50rem;
+  position: relative;
+}
+.presentation::before {
+  position: absolute;
+  content: "Best articles for your home";
+  left: 50px;
+  top: 100px;
+  width: 300px;
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+.presentation::after {
+  position: absolute;
+  content: "purchase in lowest price...";
+  left: 50px;
+  top: 250px;
+  width: 200px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+
+}
+/* end of header */
+
+
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  padding: 30px 0 10px 0;
+  background-color: rgb(110, 117, 117);
+
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item {
+  width: 30%;
+  margin-bottom: 3rem;
+  background: #bbc9d1;
+  border-radius: 10px 10px 0 0;
+
+}
+.item:hover {
+  opacity: .7;
+
+}
+
+.item__img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+ 
+}
+.item__text {
+  padding: 0 10px;
 }
